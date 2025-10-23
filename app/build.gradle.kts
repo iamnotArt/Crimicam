@@ -56,4 +56,25 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+
+    implementation(libs.firebase.auth)
+    implementation(libs.androidx.credentials.play.services.auth)
+
+    implementation(libs.androidx.foundation)
+
+    implementation(libs.accompanist.navigation.animation)
+
+    implementation(libs.androidx.foundation.v160)
+
+    implementation(libs.androidx.animation)
+
+    implementation(libs.androidx.foundation.vversion)
+
+    implementation (libs.accompanist.flowlayout)
+
+    implementation (libs.androidx.lifecycle.viewmodel.compose)
+
+    implementation(libs.firebase.firestore.ktx.v24103)
+
+    implementation (libs.androidx.datastore.preferences)
 }
