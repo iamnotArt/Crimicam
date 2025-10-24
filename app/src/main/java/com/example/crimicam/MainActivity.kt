@@ -76,8 +76,8 @@ class MainActivity : ComponentActivity() {
                         navController = navController,
                         startDestination = "login",
                         modifier = Modifier.padding(innerPadding),
-                        enterTransition = { fadeIn(animationSpec = tween(200)) },
-                        exitTransition = { fadeOut(animationSpec = tween(200)) }
+                        enterTransition = { fadeIn(animationSpec = tween(50)) },
+                        exitTransition = { fadeOut(animationSpec = tween(50)) }
                     ) {
 
                         //login
