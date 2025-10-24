@@ -62,7 +62,7 @@ dependencies {
 
     implementation(libs.androidx.foundation)
 
-    implementation(libs.accompanist.navigation.animation)
+    implementation(libs.androidx.navigation.compose)
 
     implementation(libs.androidx.foundation.v160)
 
