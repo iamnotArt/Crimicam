@@ -44,7 +44,6 @@ fun LoginScreen(
             Text(
                 text = "Crimicam",
                 fontWeight = FontWeight.Bold,
-                color = MaterialTheme.colorScheme.primary,
                 textAlign = TextAlign.Center,
                 modifier = Modifier.fillMaxWidth().padding(top = 12.dp),
                 fontSize = 32.sp
@@ -62,7 +61,6 @@ fun LoginScreen(
             Text(
                 text = "Login to Continue",
                 style = MaterialTheme.typography.headlineMedium,
-                color = MaterialTheme.colorScheme.primary,
                 textAlign = TextAlign.Center,
                 modifier = Modifier.fillMaxWidth(),
                 fontSize = 24.sp
@@ -105,8 +103,7 @@ fun EmailTextField() {
         onValueChange = { email = it },
         label = {
             Text(
-                text = "Email Address",
-                color = MaterialTheme.colorScheme.primary
+                text = "Email Address"
             )
         },
         placeholder = { Text("Email Address") },
@@ -137,19 +134,19 @@ fun PasswordTextField() {
         onValueChange = { password = it },
         label = {
             Text(
-                text = "Password",
-                color = MaterialTheme.colorScheme.primary
+                text = "Password"
             )
         },
         placeholder = { Text("Enter your password") },
         visualTransformation = if (hidden) PasswordVisualTransformation() else VisualTransformation.None,
         trailingIcon = {
             IconButton(onClick = { hidden = !hidden }) {
-                Image(
+                Icon(
                     painter = painterResource(
                         id = if (hidden) R.drawable.ic_visibility_off else R.drawable.ic_visibility_on
                     ),
                     contentDescription = if (hidden) "Show password" else "Hide password",
+                    tint = MaterialTheme.colorScheme.primary, // or Color.Unspecified to keep original color
                     modifier = Modifier.size(24.dp)
                 )
             }
